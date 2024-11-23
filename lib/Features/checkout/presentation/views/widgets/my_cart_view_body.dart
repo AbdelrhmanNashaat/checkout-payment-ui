@@ -18,21 +18,21 @@ class MyCartViewBody extends StatelessWidget {
           ),
           Expanded(child: Image.asset('assets/images/basket_image.png')),
           const SizedBox(
-            height: 25,
+            height: 20,
           ),
           const OrderInfoItem(
             title: 'Order Subtotal',
             value: r'42.97$',
           ),
           const SizedBox(
-            height: 3,
+            height: 5,
           ),
           const OrderInfoItem(
             title: 'Discount',
             value: r'0$',
           ),
           const SizedBox(
-            height: 3,
+            height: 5,
           ),
           const OrderInfoItem(
             title: 'Shipping',
@@ -40,23 +40,24 @@ class MyCartViewBody extends StatelessWidget {
           ),
           const Divider(
             thickness: 2,
-            height: 34,
+            height: 40,
             color: Color(0xffC7C7C7),
           ),
           const TotalPrice(title: 'Total', value: r'$50.97'),
-          const SizedBox(
-            height: 16,
-          ),
+          const SizedBox(height: 20),
           CustomButton(
+            text: 'Complete Payment',
             onTap: () {
-              Navigator.of(context).push(MaterialPageRoute(builder: (context) {
-                return const PaymentDetailsView();
-              }));
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) {
+                    return const PaymentDetailsView();
+                  },
+                ),
+              );
             },
           ),
-          const SizedBox(
-            height: 12,
-          ),
+          const SizedBox(height: 16),
         ],
       ),
     );

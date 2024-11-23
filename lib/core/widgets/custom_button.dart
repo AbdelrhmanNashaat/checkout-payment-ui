@@ -2,9 +2,11 @@ import 'package:checkout_payment_ui/core/utils/styles.dart';
 import 'package:flutter/widgets.dart';
 
 class CustomButton extends StatelessWidget {
+  final String text;
   const CustomButton({
     super.key,
     this.onTap,
+    required this.text,
   });
 
   final void Function()? onTap;
@@ -22,9 +24,9 @@ class CustomButton extends StatelessWidget {
             borderRadius: BorderRadius.circular(15),
           ),
         ),
-        child: const Center(
+        child: Center(
           child: Text(
-            'Complete Payment',
+            text,
             textAlign: TextAlign.center,
             style: Styles.style22,
           ),
