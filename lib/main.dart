@@ -2,6 +2,7 @@ import 'package:checkout_payment_ui/Features/checkout/presentation/views/my_cart
 import 'package:flutter/material.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(const CheckoutApp());
 }
 
