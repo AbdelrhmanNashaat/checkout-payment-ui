@@ -4,9 +4,11 @@ import 'package:flutter_svg/svg.dart';
 
 AppBar buildAppBar({final String? title}) {
   return AppBar(
-    leading: Center(
-      child: SvgPicture.asset(
-        'assets/images/arrow.svg',
+    leading: GestureDetector(
+      child: Center(
+        child: SvgPicture.asset(
+          'assets/images/arrow.svg',
+        ),
       ),
     ),
     elevation: 0,

@@ -5,9 +5,9 @@ import 'package:dartz/dartz.dart';
 import 'checkout_repo.dart';
 
 class CheckoutRepoImpl extends CheckoutRepo {
-  final StripeServices stripeServices;
+  final StripeServices stripeServices = StripeServices();
 
-  CheckoutRepoImpl({required this.stripeServices});
+  CheckoutRepoImpl();
   @override
   Future<Either<Failure, void>> makePayment(
       {required PaymentIntentInputModel paymentIntentInputModel}) async {
