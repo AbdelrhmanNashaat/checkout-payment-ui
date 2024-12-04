@@ -14,8 +14,8 @@ class PaymentMethodItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return AnimatedContainer(
       duration: const Duration(milliseconds: 300),
-      width: 103,
-      height: 62,
+      width: 140,
+      height: 60,
       decoration: ShapeDecoration(
         shape: RoundedRectangleBorder(
           side: BorderSide(
@@ -39,6 +39,8 @@ class PaymentMethodItem extends StatelessWidget {
         child: Center(
           child: SvgPicture.asset(
             image,
+            width: 80,
+            fit: BoxFit.scaleDown,
           ),
         ),
       ),

@@ -26,38 +26,34 @@ class MyCartViewBody extends StatelessWidget {
           ),
           const OrderInfoItem(
             title: 'Order Subtotal',
-            value: r'42.97$',
+            value: r'150.86$',
           ),
           const SizedBox(
             height: 3,
           ),
           const OrderInfoItem(
             title: 'Discount',
-            value: r'0$',
+            value: r'12.86$',
           ),
           const SizedBox(
             height: 3,
           ),
           const OrderInfoItem(
             title: 'Shipping',
-            value: r'8$',
+            value: r'12.00$',
           ),
           const Divider(
             thickness: 2,
             height: 34,
             color: Color(0xffC7C7C7),
           ),
-          const TotalPrice(title: 'Total', value: r'$50.97'),
+          const TotalPrice(title: 'Total', value: r'$150.0'),
           const SizedBox(
             height: 16,
           ),
           CustomButton(
             text: 'Complete Payment',
             onTap: () {
-              // Navigator.of(context).push(MaterialPageRoute(builder: (context) {
-              //   return const PaymentDetailsView();
-              // }));
-
               showModalBottomSheet(
                 context: context,
                 shape: RoundedRectangleBorder(
